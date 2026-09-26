@@ -2,6 +2,7 @@
   "name": "us-chrome",
   "image": "lscr.io/linuxserver/chromium",
   "runArgs": ["--shm-size=4gb"],
+  "overrideCommand": false,
   "containerEnv": {
     "PUID": "1000",
     "PGID": "1000",
