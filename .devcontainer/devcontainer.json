@@ -1,0 +1,17 @@
+{
+  "name": "us-chrome",
+  "image": "lscr.io/linuxserver/chromium",
+  "runArgs": ["--shm-size=1gb"],
+  "containerEnv": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TITLE": "Chrome"
+  },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Chrome",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
